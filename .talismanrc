@@ -1,4 +1,6 @@
 fileignoreconfig:
+- filename: 2022/06/09/Colima/index.html
+  checksum: 3285a7783902605f1cb1509793b2c7a1396322613382de0b05e608577b20f049
 - filename: 2022/06/09/Spring-Data-JPA/index.html
   checksum: e095654f52506a65b29ca2aac2cbbdcc0ee20bc8d84d8f9e142acfbc2530fea4
 - filename: 2022/06/09/hello-world/index.html
@@ -13,10 +15,12 @@ fileignoreconfig:
   checksum: fca7caebe601e52f096e98d4a0e727145bf4da8dc4ae54ef822a6fcb870e1b74
 - filename: archives/index.html
   checksum: 7613d60d74b3750599a7b9586e3c8cd3cf2833468b07c8840cebce910fefdff9
+- filename: categories/Devops/index.html
+  checksum: 2d8a3d7af948f6b9f1fba6c429409cbbc0b9e4d4a70b9c506f7ec0cc3ea8b0ec
 - filename: categories/Java/index.html
   checksum: bb3b3d46f6e79c6b68c712f3b6677e8e170f4fd0a3d2254d0c34d4ae6b9c518d
 - filename: categories/index.html
-  checksum: 60cc8badc4cc35cce92ed0435ec23ed34d75660562567d45e68c64b32049d35c
+  checksum: f9c5a8e37cd545f9afaabf0e06371dd5a9d221b9c819f35b75d27407b74dd0e4
 - filename: css/fonts/fontawesome-webfont.svg
   checksum: 3cb155a4aef01bdc48e766b1a10941af146144425182f17280ea109fbbc49e29
 - filename: css/gitalk.css
@@ -107,6 +111,10 @@ fileignoreconfig:
   checksum: 62cef5412e9cef7530278fa4f13df90d785cae3e89ba16dcc639860655aeafbb
 - filename: links/index.html
   checksum: f12b224ecaff4a4ea02ed6c4cec411a909b2b16d834188643c52ea551b7adb62
+- filename: local-search.xml
+  checksum: 14dd55d3978d9b8d070f255716774c2855e8482ee20bfc7568168bbfea078b0a
+- filename: tags/docker/index.html
+  checksum: 52b6bb09645935025364fbb7a044b572f81c5ad5f45dc1c5836eeea3a712a8aa
 - filename: tags/index.html
   checksum: d76df9d85d68355ba96caf49d075209256d4def313d782c46b77630c2d76595d
 version: "1.0"
