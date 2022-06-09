@@ -5,6 +5,8 @@ fileignoreconfig:
   checksum: ee8edcf99a45ab572abbdc55f9dd47d3e4471c9ed300a30eb587924c56206827
 - filename: 404.html
   checksum: 0565482b613c46303bc75b3ef591622e89e45abfae419e82b561f18ec3cf4384
+- filename: about/index.html
+  checksum: 524c70454e4a88766fee0300e2c5293c1d80d563fc5723456b309ad46d58862d
 - filename: archives/2022/06/index.html
   checksum: c771ff24ee7b9ca9c2873708ec9ed291fb5a9e5082e5d244f8c50a4f40ab3a73
 - filename: archives/2022/index.html
