@@ -1,18 +1,46 @@
 fileignoreconfig:
+- filename: 2022/06/09/hello-world/index.html
+  checksum: 3d72e50d2a6cbbca46a434b2a397d3b47c84d477762a47525d90ec3aea5ae9de
+- filename: 404.html
+  checksum: 0565482b613c46303bc75b3ef591622e89e45abfae419e82b561f18ec3cf4384
+- filename: archives/2022/06/index.html
+  checksum: c771ff24ee7b9ca9c2873708ec9ed291fb5a9e5082e5d244f8c50a4f40ab3a73
+- filename: archives/2022/index.html
+  checksum: fca7caebe601e52f096e98d4a0e727145bf4da8dc4ae54ef822a6fcb870e1b74
+- filename: archives/index.html
+  checksum: 7613d60d74b3750599a7b9586e3c8cd3cf2833468b07c8840cebce910fefdff9
+- filename: categories/index.html
+  checksum: 011ceb484e8ed5b12abffca3bcc0eff0207b937eacec2d57f0ea0e04a19f0c94
 - filename: css/fonts/fontawesome-webfont.svg
   checksum: 3cb155a4aef01bdc48e766b1a10941af146144425182f17280ea109fbbc49e29
+- filename: css/gitalk.css
+  checksum: d7487bd75c37518a364f12e6ea7b35c4e1c01981af283c158eafd33fa5cccc27
+- filename: css/highlight-dark.css
+  checksum: daff11ea4e644465f87de67050a5b54b29baf7f9fe06324f63f20df150021ef8
+- filename: css/highlight.css
+  checksum: 2c41fb07e1e31a1801131b3c1faf3043334da37211f97aa8580fe83078d02c04
 - filename: fancybox/jquery.fancybox.min.css
   checksum: b8fb1aaa3faf3bc3971b0490ca0289901ca9d9b031e44f6c4eacdb82692d263b
 - filename: fancybox/jquery.fancybox.min.js
   checksum: b8a3d399a6ce60a833f865112f4918954c1443677e41bc5285339925f4521a78
+- filename: index.html
+  checksum: d6c04c68de946f3b38786042d49de6450ed8db2357bd82aca7e017ebecac2378
 - filename: js/algolia-search.js
   checksum: ec3f5e60e450b8bb3cdf0d0c3528598e3e21ffb24176883b6a217ffdee4c8963
+- filename: js/color-schema.js
+  checksum: 280899094d56ec7bd54c34f2c2560a4299f6e60d61e46c59e3f2ecc8473bccc6
 - filename: js/jquery-3.4.1.min.js
   checksum: d32caebe6126cd739041683810d2fe1d4e045943f1d4a21caab2eff237743168
+- filename: js/leancloud.js
+  checksum: 3b2984786ca3fdcae997b91f4cdd9aeb90d2e24ae20a1a71e957a68463c3f948
 - filename: js/local-search.js
-  checksum: 1197b3e133e3d0acb1c95625eb62a051cb079bcb037886856d6bf36564bf26f2
+  checksum: ffe392a7c56f4d1817f3928d7b5775178a0c0442ce1033752c55e38341878edc
 - filename: lib/anime.min.js
   checksum: 0b06634e8b0fb5216afcaebab3ca118de54aff5cc0b9ddd09bc48f9380ac28fc
 - filename: lib/font-awesome/css/all.min.css
   checksum: 37e728533eb85ad646b62dadc8c7dfd507930b4ad6adce0093621d9f0918bef6
+- filename: links/index.html
+  checksum: f12b224ecaff4a4ea02ed6c4cec411a909b2b16d834188643c52ea551b7adb62
+- filename: tags/index.html
+  checksum: d76df9d85d68355ba96caf49d075209256d4def313d782c46b77630c2d76595d
 version: "1.0"
