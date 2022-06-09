@@ -1,0 +1,18 @@
+fileignoreconfig:
+- filename: css/fonts/fontawesome-webfont.svg
+  checksum: 3cb155a4aef01bdc48e766b1a10941af146144425182f17280ea109fbbc49e29
+- filename: fancybox/jquery.fancybox.min.css
+  checksum: b8fb1aaa3faf3bc3971b0490ca0289901ca9d9b031e44f6c4eacdb82692d263b
+- filename: fancybox/jquery.fancybox.min.js
+  checksum: b8a3d399a6ce60a833f865112f4918954c1443677e41bc5285339925f4521a78
+- filename: js/algolia-search.js
+  checksum: ec3f5e60e450b8bb3cdf0d0c3528598e3e21ffb24176883b6a217ffdee4c8963
+- filename: js/jquery-3.4.1.min.js
+  checksum: d32caebe6126cd739041683810d2fe1d4e045943f1d4a21caab2eff237743168
+- filename: js/local-search.js
+  checksum: 1197b3e133e3d0acb1c95625eb62a051cb079bcb037886856d6bf36564bf26f2
+- filename: lib/anime.min.js
+  checksum: 0b06634e8b0fb5216afcaebab3ca118de54aff5cc0b9ddd09bc48f9380ac28fc
+- filename: lib/font-awesome/css/all.min.css
+  checksum: 37e728533eb85ad646b62dadc8c7dfd507930b4ad6adce0093621d9f0918bef6
+version: "1.0"
