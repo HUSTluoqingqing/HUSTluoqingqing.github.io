@@ -1,6 +1,6 @@
 fileignoreconfig:
 - filename: 2022/06/09/hello-world/index.html
-  checksum: 3d72e50d2a6cbbca46a434b2a397d3b47c84d477762a47525d90ec3aea5ae9de
+  checksum: ee8edcf99a45ab572abbdc55f9dd47d3e4471c9ed300a30eb587924c56206827
 - filename: 404.html
   checksum: 0565482b613c46303bc75b3ef591622e89e45abfae419e82b561f18ec3cf4384
 - filename: archives/2022/06/index.html
