@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Es设置密码</title>
+    <link href="/2022/06/23/Es%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/"/>
+    <url>/2022/06/23/Es%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/</url>
+    
+    <content type="html"><![CDATA[<ol><li><p>enable xpack in elasticsearch.yml<br>sudo vim &#x2F;etc&#x2F;elasticsearch&#x2F;elasticsearch.yml<br>xpack.security.enabled: true<br>or<br>xpack.security.enabled: true<br>xpack.license.self_generated.type: basic<br>xpack.security.transport.ssl.enabled: true</p></li><li><p>restart elasticsearch<br>sudo systemctl restart elasticsearch</p></li><li><p>setup user password<br>cd &#x2F;usr&#x2F;share&#x2F;elasticsearch&#x2F;bin<br>sudo .&#x2F;elasticsearch-setup-passwords auto</p></li><li><p>test<br>curl localhost:9200&#x2F;_cat&#x2F;nodes?v –user elastic:password</p></li></ol><p><a href="https://zoltanaltfatter.com/2018/12/06/running-multi-node-elasticsearch-cluster-locally">xpack issue</a><br>curl localhost:9200&#x2F;_xpack</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Devops</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Elasticsearch</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Spring-Data-JPA</title>
     <link href="/2022/06/17/Spring-Data-JPA/"/>
     <url>/2022/06/17/Spring-Data-JPA/</url>
