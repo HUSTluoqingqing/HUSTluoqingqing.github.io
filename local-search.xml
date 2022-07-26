@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>docker-1</title>
+    <link href="/2022/07/26/docker-1/"/>
+    <url>/2022/07/26/docker-1/</url>
+    
+    <content type="html"><![CDATA[<h4 id="docker-compose-yaml中可以通过指定build由文件夹构建"><a href="#docker-compose-yaml中可以通过指定build由文件夹构建" class="headerlink" title="docker-compose.yaml中可以通过指定build由文件夹构建"></a>docker-compose.yaml中可以通过指定build由文件夹构建</h4><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs dockerfile">version: <span class="hljs-string">&#x27;3&#x27;</span><br>services:<br>  es_init:<br>    image: es_init<br>    build: elasticsearch<br></code></pre></td></tr></table></figure><h4 id="docker的volume有两种形式"><a href="#docker的volume有两种形式" class="headerlink" title="docker的volume有两种形式"></a>docker的volume有两种形式</h4><ul><li>使用命名的数据卷</li><li>直接指定主机上的路径来创建数据卷<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs dockerfile">version: <span class="hljs-string">&quot;3.2&quot;</span><br>services:<br>  web:<br>    image: nginx:alpine<br>    <span class="hljs-comment"># 关联路径</span><br>    volumes:<br>      - type: <span class="hljs-keyword">volume</span><span class="language-bash"></span><br><span class="language-bash">        <span class="hljs-built_in">source</span>: mydata</span><br>        target: /data<br>      - type: bind<br>        source: ./nginx/logs<br>        target: /var/log/nginx<br>  jenkins:<br>    image: jenkins/jenkins:lts<br>    <span class="hljs-comment"># 命名</span><br>    volumes:<br>      - jenkins_home:/var/jenkins_home<br>      - mydata:/data<br>volumes:<br>  mydata:<br>  jenkins_home:<br></code></pre></td></tr></table></figure></li></ul><h4 id="docker-hub"><a href="#docker-hub" class="headerlink" title="docker hub"></a>docker hub</h4><p>docker hub中会介绍docker的详细情况<br>例如对于postgresql容器，docker中介绍了初始化脚本的文件路径<code>/docker-entrypoint-initdb.d</code><br>以及数据存储路径<code>/var/lib/postgresql/data</code><br>知道这些路径可以协助我们在容器中对数据库进行初始化以及数据持久化</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Docker</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Devops</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Es设置密码</title>
     <link href="/2022/06/23/Es%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/"/>
     <url>/2022/06/23/Es%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/</url>

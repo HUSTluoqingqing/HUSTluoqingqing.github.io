@@ -16,22 +16,22 @@
   <meta name="author" content="HUSTluoqingqing">
   <meta name="keywords" content="">
   
-    <meta name="description" content="enable xpack in elasticsearch.ymlsudo vim &#x2F;etc&#x2F;elasticsearch&#x2F;elasticsearch.ymlxpack.security.enabled: trueorxpack.security.enabled: truexpack.license.self_generated.type: basicxpack.se">
+    <meta name="description" content="docker-compose.yaml中可以通过指定build由文件夹构建12345version: &amp;#x27;3&amp;#x27;services:  es_init:    image: es_init    build: elasticsearch  docker的volume有两种形式 使用命名的数据卷 直接指定主机上的路径来创建数据卷12345678910111213141516171819">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Es设置密码">
-<meta property="og:url" content="https://hustluoqingqing.github.io/2022/06/23/Es%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/index.html">
+<meta property="og:title" content="docker-1">
+<meta property="og:url" content="https://hustluoqingqing.github.io/2022/07/26/docker-1/index.html">
 <meta property="og:site_name" content="HUSTluoqingqing">
-<meta property="og:description" content="enable xpack in elasticsearch.ymlsudo vim &#x2F;etc&#x2F;elasticsearch&#x2F;elasticsearch.ymlxpack.security.enabled: trueorxpack.security.enabled: truexpack.license.self_generated.type: basicxpack.se">
+<meta property="og:description" content="docker-compose.yaml中可以通过指定build由文件夹构建12345version: &amp;#x27;3&amp;#x27;services:  es_init:    image: es_init    build: elasticsearch  docker的volume有两种形式 使用命名的数据卷 直接指定主机上的路径来创建数据卷12345678910111213141516171819">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-06-23T09:33:42.000Z">
-<meta property="article:modified_time" content="2022-06-23T09:36:53.319Z">
+<meta property="article:published_time" content="2022-07-26T06:16:11.000Z">
+<meta property="article:modified_time" content="2022-07-26T06:29:14.841Z">
 <meta property="article:author" content="HUSTluoqingqing">
-<meta property="article:tag" content="Elasticsearch">
+<meta property="article:tag" content="Devops">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Es设置密码 - HUSTluoqingqing</title>
+  <title>docker-1 - HUSTluoqingqing</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -194,7 +194,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Es设置密码"></span>
+            <span id="subtitle" data-typed-text="docker-1"></span>
           
         </div>
 
@@ -205,8 +205,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-06-23 17:33" pubdate>
-          2022年6月23日 下午
+        <time datetime="2022-07-26 14:16" pubdate>
+          2022年7月26日 下午
         </time>
       </span>
     
@@ -217,7 +217,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          494 字
+          618 字
         
       </span>
     
@@ -228,7 +228,7 @@
         
         
         
-          5 分钟
+          6 分钟
         
       </span>
     
@@ -266,21 +266,17 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Es设置密码</h1>
+            <h1 style="display: none">docker-1</h1>
             
             <div class="markdown-body">
               
-              <ol>
-<li><p>enable xpack in elasticsearch.yml<br>sudo vim &#x2F;etc&#x2F;elasticsearch&#x2F;elasticsearch.yml<br>xpack.security.enabled: true<br>or<br>xpack.security.enabled: true<br>xpack.license.self_generated.type: basic<br>xpack.security.transport.ssl.enabled: true</p>
-</li>
-<li><p>restart elasticsearch<br>sudo systemctl restart elasticsearch</p>
-</li>
-<li><p>setup user password<br>cd &#x2F;usr&#x2F;share&#x2F;elasticsearch&#x2F;bin<br>sudo .&#x2F;elasticsearch-setup-passwords auto</p>
-</li>
-<li><p>test<br>curl localhost:9200&#x2F;_cat&#x2F;nodes?v –user elastic:password</p>
-</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://zoltanaltfatter.com/2018/12/06/running-multi-node-elasticsearch-cluster-locally">xpack issue</a><br>curl localhost:9200&#x2F;_xpack</p>
+              <h4 id="docker-compose-yaml中可以通过指定build由文件夹构建"><a href="#docker-compose-yaml中可以通过指定build由文件夹构建" class="headerlink" title="docker-compose.yaml中可以通过指定build由文件夹构建"></a>docker-compose.yaml中可以通过指定build由文件夹构建</h4><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs dockerfile">version: <span class="hljs-string">&#x27;3&#x27;</span><br>services:<br>  es_init:<br>    image: es_init<br>    build: elasticsearch<br></code></pre></td></tr></table></figure>
+
+<h4 id="docker的volume有两种形式"><a href="#docker的volume有两种形式" class="headerlink" title="docker的volume有两种形式"></a>docker的volume有两种形式</h4><ul>
+<li>使用命名的数据卷</li>
+<li>直接指定主机上的路径来创建数据卷<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs dockerfile">version: <span class="hljs-string">&quot;3.2&quot;</span><br>services:<br>  web:<br>    image: nginx:alpine<br>    <span class="hljs-comment"># 关联路径</span><br>    volumes:<br>      - type: <span class="hljs-keyword">volume</span><span class="language-bash"></span><br><span class="language-bash">        <span class="hljs-built_in">source</span>: mydata</span><br>        target: /data<br>      - type: bind<br>        source: ./nginx/logs<br>        target: /var/log/nginx<br>  jenkins:<br>    image: jenkins/jenkins:lts<br>    <span class="hljs-comment"># 命名</span><br>    volumes:<br>      - jenkins_home:/var/jenkins_home<br>      - mydata:/data<br>volumes:<br>  mydata:<br>  jenkins_home:<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="docker-hub"><a href="#docker-hub" class="headerlink" title="docker hub"></a>docker hub</h4><p>docker hub中会介绍docker的详细情况<br>例如对于postgresql容器，docker中介绍了初始化脚本的文件路径<code>/docker-entrypoint-initdb.d</code><br>以及数据存储路径<code>/var/lib/postgresql/data</code><br>知道这些路径可以协助我们在容器中对数据库进行初始化以及数据持久化</p>
 
               
             </div>
@@ -298,7 +294,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Devops/" class="category-chain-item">Devops</a>
+  <a href="/categories/Docker/" class="category-chain-item">Docker</a>
   
   
 
@@ -313,7 +309,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Elasticsearch/">#Elasticsearch</a>
+        <a href="/tags/Devops/">#Devops</a>
       
     </div>
   
@@ -325,8 +321,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Es设置密码</div>
-      <div>https://hustluoqingqing.github.io/2022/06/23/Es设置密码/</div>
+      <div>docker-1</div>
+      <div>https://hustluoqingqing.github.io/2022/07/26/docker-1/</div>
     </div>
     <div class="license-meta">
       
@@ -338,7 +334,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年6月23日</div>
+          <div>2022年7月26日</div>
         </div>
       
       
@@ -368,18 +364,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/07/26/docker-1/" title="docker-1">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">docker-1</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/06/17/Spring-Data-JPA/" title="Spring-Data-JPA">
-                        <span class="hidden-mobile">Spring-Data-JPA</span>
+                      <a href="/2022/06/23/Es%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/" title="Es设置密码">
+                        <span class="hidden-mobile">Es设置密码</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
